@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80BCFF02026338400DBE57A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80BCFEF2026338400DBE57A /* MovieCell.swift */; };
 		C898669620250E130092D386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898669520250E130092D386 /* AppDelegate.swift */; };
 		C898669B20250E130092D386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C898669920250E130092D386 /* Main.storyboard */; };
 		C898669D20250E130092D386 /* Asssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898669C20250E130092D386 /* Asssets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C80BCFEF2026338400DBE57A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		C898669220250E130092D386 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C898669520250E130092D386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C898669A20250E130092D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C80BCFEE20262EAA00DBE57A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		C898668920250E130092D386 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +90,7 @@
 				C89866A920250E130092D386 /* flixTests */,
 				C89866B420250E130092D386 /* flixUITests */,
 				C898669320250E130092D386 /* Products */,
+				C80BCFEE20262EAA00DBE57A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,7 @@
 				C898669C20250E130092D386 /* Asssets.xcassets */,
 				C898669E20250E130092D386 /* LaunchScreen.storyboard */,
 				C89866A120250E130092D386 /* Info.plist */,
+				C80BCFEF2026338400DBE57A /* MovieCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			files = (
 				C8FB95C4202528FE00B8AEC2 /* NowPlayingViewController.swift in Sources */,
 				C898669620250E130092D386 /* AppDelegate.swift in Sources */,
+				C80BCFF02026338400DBE57A /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
