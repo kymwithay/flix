@@ -18,6 +18,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
         super.viewDidLoad()
         
         tableView.dataSource = self
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MovieCell")
+
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MovieCell")
+
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         

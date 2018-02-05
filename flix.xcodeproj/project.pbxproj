@@ -36,16 +36,16 @@
 
 /* Begin PBXFileReference section */
 		C80BCFEF2026338400DBE57A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		C898669220250E130092D386 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C898669220250E130092D386 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = flix.app; path = "/Users/kymberleehill/GitHub/flix/build/Debug-iphoneos/flix.app"; sourceTree = "<absolute>"; };
 		C898669520250E130092D386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C898669A20250E130092D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C898669C20250E130092D386 /* Asssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asssets.xcassets; sourceTree = "<group>"; };
 		C898669F20250E130092D386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C89866A120250E130092D386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C89866A620250E130092D386 /* flixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89866A620250E130092D386 /* flixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = flixTests.xctest; path = "/Users/kymberleehill/GitHub/flix/build/Debug-iphoneos/flixTests.xctest"; sourceTree = "<absolute>"; };
 		C89866AA20250E130092D386 /* flixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flixTests.swift; sourceTree = "<group>"; };
 		C89866AC20250E130092D386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C89866B120250E130092D386 /* flixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89866B120250E130092D386 /* flixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = flixUITests.xctest; path = "/Users/kymberleehill/GitHub/flix/build/Debug-iphoneos/flixUITests.xctest"; sourceTree = "<absolute>"; };
 		C89866B520250E130092D386 /* flixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flixUITests.swift; sourceTree = "<group>"; };
 		C89866B720250E130092D386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8FB95C3202528FE00B8AEC2 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
@@ -89,19 +89,8 @@
 				C898669420250E130092D386 /* flix */,
 				C89866A920250E130092D386 /* flixTests */,
 				C89866B420250E130092D386 /* flixUITests */,
-				C898669320250E130092D386 /* Products */,
 				C80BCFEE20262EAA00DBE57A /* Recovered References */,
 			);
-			sourceTree = "<group>";
-		};
-		C898669320250E130092D386 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C898669220250E130092D386 /* flix.app */,
-				C89866A620250E130092D386 /* flixTests.xctest */,
-				C89866B120250E130092D386 /* flixUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C898669420250E130092D386 /* flix */ = {
@@ -227,7 +216,7 @@
 				Base,
 			);
 			mainGroup = C898668920250E130092D386;
-			productRefGroup = C898669320250E130092D386 /* Products */;
+			productRefGroup = C898668920250E130092D386;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
