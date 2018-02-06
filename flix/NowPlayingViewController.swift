@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class NowPlayingViewController: UIViewController, UITableViewDataSource{
+
+class NowPlayingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,10 +20,8 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
         super.viewDidLoad()
         
         tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MovieCell")
-
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MovieCell")
-
+        tableView.delegate = self
+        tableView.rowHeight = 200
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         
@@ -58,6 +58,14 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource{
             let overview = movie["overview"] as! String
             cell.titleLabel.text = title
             cell.overviewLabel.text = overview
+            
+            let posterPathString = movie["poster_path"] as! String
+            let baseUrlString = "https://image.tmdb.org/t/p/w500"
+            let posterUrl = URL(string: baseUrlString + posterPathString)!
+            cell.pictureView.af_setImage(withURL: posterUrl)
+            
+            cell.pictureView.layer.cornerRadius = 10.0
+            cell.pictureView.clipsToBounds = true
             
         return cell
     }
