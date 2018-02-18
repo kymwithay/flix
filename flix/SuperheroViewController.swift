@@ -26,6 +26,8 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         let width = collectionView.frame.size.width / cellsPerLine - interItemSpacingTotal/cellsPerLine
         layout.itemSize = CGSize(width: width, height: width * 3/2)
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
         fetchMoviesData()
         
     }
@@ -47,6 +49,16 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         return cell
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UICollectionViewCell
+        if let indexPath = collectionView.indexPath(for: cell) {
+            let movie = movies[indexPath.item]
+            let detailViewController = segue.destination as! DetailSuperHeroViewController
+            detailViewController.movie = movie
+        }
+        
+    }
+    
     func fetchMoviesData() {
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         
@@ -71,19 +83,4 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         task.resume()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destinationViewController.
- // Pass the selected object to the new view controller.
- }
- */
-
