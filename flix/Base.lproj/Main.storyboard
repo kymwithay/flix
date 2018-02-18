@@ -200,6 +200,9 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="Omo-8s-Vho" id="4Pf-yq-K8E"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
