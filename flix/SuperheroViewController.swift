@@ -32,7 +32,6 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         if let posterPathString = movie["poster_path"] as? String{
             let baseUrlString = "https://image.tmdb.org/t/p/w500"
             let posterUrl = URL(string: baseUrlString + posterPathString)!
-            print(posterUrl)
             cell.posterImageView.af_setImage(withURL: posterUrl)
             cell.posterImageView.layer.cornerRadius = 10.0
         }
