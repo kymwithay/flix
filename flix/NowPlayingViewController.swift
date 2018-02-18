@@ -14,7 +14,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var tableView: UITableView!
     
-    var movies: [[String: Any]] = []
+    internal var movies: [[String: Any]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 200
-        
+        fetchMoviesData()
+    }
+    
+    func fetchMoviesData() {
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -50,9 +53,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
         Int{
             return movies.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
         UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
             let movie = movies[indexPath.row]
             let title = movie["title"] as! String
             let overview = movie["overview"] as! String
@@ -67,13 +71,12 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource, UITable
             cell.pictureView.layer.cornerRadius = 10.0
             cell.pictureView.clipsToBounds = true
             
-        return cell
+            return cell
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
 }
