@@ -123,9 +123,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="overviewLabel" destination="O5g-Hd-7nK" id="5Gp-Cs-9M1"/>
-                                            <outlet property="pictureView" destination="yEv-Wr-0fy" id="y3D-lq-dL5"/>
-                                            <outlet property="titleLabel" destination="lKm-RH-ikE" id="5GN-9j-ScV"/>
+                                            <outlet property="overviewLabel" destination="O5g-Hd-7nK" id="gs0-qb-a2O"/>
+                                            <outlet property="pictureView" destination="yEv-Wr-0fy" id="gFi-ei-VRr"/>
+                                            <outlet property="titleLabel" destination="lKm-RH-ikE" id="Jrf-fW-IUk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
